@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./components/Home/home";
 import Help from "./components/Help/help";
 import Login from "./components/Login/login";
+import SignUp from "./components/SignUo/signUp";
 
 // import Login from "./components/signUpPage/signUp";
 // import Testimonials from "./components/Testimonials/testimonials";
@@ -19,6 +20,7 @@ const main = (
         <Route exact path="/" component={Home} />
         <Route exact path="/help" component={Help} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/signUp" component={SignUp} />
       </Switch>
     </Router>
   </div>

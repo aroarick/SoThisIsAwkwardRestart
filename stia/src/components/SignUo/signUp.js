@@ -6,10 +6,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import API from "../utils/API";
 
-class Login extends React.Component {
+class SignUp extends React.Component {
   state = {
-    userEmail: "",
-    userPassword: ""
+    name: "",
+    email: "",
+    userPassword: "",
+    userPassword2: ""
   };
 
   handleInputChange = event => {
@@ -21,18 +23,24 @@ class Login extends React.Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-
-    API.login({
-      userEmail: this.state.userEmail,
-      userPassword: this.state.userPassword
-    })
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+    if (
+      this.state.userPassword &&
+      this.state.userPassword2 &&
+      this.state.name &&
+      this.state.email
+    ) {
+      if (this.state.userPassword === this.state.userPassword2) {
+        API.signUp({
+          name: this.state.name,
+          email: this.state.email,
+          userPassword: this.state.userPassword
+        })
+          .then(res => console.log(res))
+          .catch(err => console.log(err));
+      }
+    }
   };
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+
   render() {
     return (
       <>
@@ -46,28 +54,49 @@ class Login extends React.Component {
         </Navbar>
         <br />
         <Container>
-          <h1>Login</h1>
+          <h1>Sign Up</h1>
           <br />
           <Form>
+            <Form.Group controlId="userName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                value={this.state.userName}
+                onChange={this.handleInputChange}
+                type="text"
+                placeholder="Enter name"
+              />
+            </Form.Group>
+
             <Form.Group controlId="userEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
-                type="email"
-                placeholder="Enter email"
                 value={this.state.userEmail}
                 onChange={this.handleInputChange}
+                type="email"
+                placeholder="Enter email"
               />
             </Form.Group>
 
             <Form.Group controlId="userPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
+                value={this.state.userPassword}
+                onChange={this.handleInputChange}
                 type="password"
                 placeholder="Password"
-                value={this.state.password}
-                onChange={this.handleInputChange}
               />
             </Form.Group>
+
+            <Form.Group controlId="userPassword2">
+              <Form.Label>Re-enter YourPassword</Form.Label>
+              <Form.Control
+                value={this.state.userPassword2}
+                onChange={this.handleInputChange}
+                type="password"
+                placeholder="Password"
+              />
+            </Form.Group>
+
             <Button
               onClick={this.handleFormSubmit}
               variant="primary"
@@ -76,14 +105,9 @@ class Login extends React.Component {
               Submit
             </Button>
           </Form>
-
-          <h5>Don't have an account?</h5>
-          <Button href="/signUp" variant="primary" type="submit">
-            Sign Up
-          </Button>
         </Container>
       </>
     );
   }
 }
-export default Login;
+export default SignUp;

@@ -38,6 +38,9 @@ class Help extends React.Component {
               <Form.Label>Template Reasons</Form.Label>
               <Form.Control as="select" multiple>
                 <option>Wuv, Twu Wuv</option>
+                <option>
+                  My code doesn't work and im hungry so I am blaming you
+                </option>
                 <option>Stinky Feet</option>
                 <option>Bad Breath</option>
                 <option>Too Much PDA</option>
