@@ -10,12 +10,12 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <Navbar bg="light" variant="light">
+        <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="#home">So This Is Awkward</Navbar.Brand>
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/help">Help Me, Help You, Help Someone</Nav.Link>
-            <Nav.Link href="/loginSignUp">Login or SignUp</Nav.Link>
+            <Nav.Link href="/login">Login or SignUp</Nav.Link>
           </Nav>
         </Navbar>
       </>

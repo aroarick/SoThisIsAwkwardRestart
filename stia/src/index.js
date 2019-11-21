@@ -4,7 +4,9 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import Home from "./components/Home/home";
-// import Help from "./components/HelpMeHelpYou-Page/helpMeHelpYou";
+import Help from "./components/Help/help";
+import Login from "./components/Login/login";
+
 // import Login from "./components/signUpPage/signUp";
 // import Testimonials from "./components/Testimonials/testimonials";
 // import About from "./components/About/about";
@@ -15,10 +17,8 @@ const main = (
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        {/* <Route exact path="/help" component={Help} />
+        <Route exact path="/help" component={Help} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/testimonials" component={Testimonials} />
-        <Route exact path="/about" component={About} /> */}
       </Switch>
     </Router>
   </div>
