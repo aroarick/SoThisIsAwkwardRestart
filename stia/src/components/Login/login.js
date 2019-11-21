@@ -8,8 +8,8 @@ import API from "../utils/API";
 
 class Login extends React.Component {
   state = {
-    userEmail: "",
-    userPassword: ""
+    email: "",
+    password: ""
   };
 
   handleInputChange = event => {
@@ -23,8 +23,8 @@ class Login extends React.Component {
     event.preventDefault();
 
     API.login({
-      userEmail: this.state.userEmail,
-      userPassword: this.state.userPassword
+      email: this.state.email,
+      password: this.state.password
     })
       .then(res => console.log(res))
       .catch(err => console.log(err));
@@ -49,23 +49,27 @@ class Login extends React.Component {
           <h1>Login</h1>
           <br />
           <Form>
-            <Form.Group controlId="userEmail">
+            <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
-                type="email"
-                placeholder="Enter email"
-                value={this.state.userEmail}
+                value={this.state.email}
                 onChange={this.handleInputChange}
+                name="email"
+                type="input"
+                placeholder="Enter email"
               />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
             </Form.Group>
-
-            <Form.Group controlId="userPassword">
+            <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
-                type="password"
-                placeholder="Password"
                 value={this.state.password}
                 onChange={this.handleInputChange}
+                name="password"
+                type="password"
+                placeholder="Password"
               />
             </Form.Group>
             <Button

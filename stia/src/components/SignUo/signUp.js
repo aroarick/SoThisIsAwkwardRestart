@@ -8,10 +8,10 @@ import API from "../utils/API";
 
 class SignUp extends React.Component {
   state = {
-    name: "",
+    username: "",
     email: "",
-    userPassword: "",
-    userPassword2: ""
+    password: "",
+    password2: ""
   };
 
   handleInputChange = event => {
@@ -24,16 +24,16 @@ class SignUp extends React.Component {
   handleFormSubmit = event => {
     event.preventDefault();
     if (
-      this.state.userPassword &&
-      this.state.userPassword2 &&
-      this.state.name &&
+      this.state.password &&
+      this.state.password2 &&
+      this.state.username &&
       this.state.email
     ) {
-      if (this.state.userPassword === this.state.userPassword2) {
+      if (this.state.password === this.state.password2) {
         API.signUp({
-          name: this.state.name,
+          username: this.state.username,
           email: this.state.email,
-          userPassword: this.state.userPassword
+          password: this.state.password
         })
           .then(res => console.log(res))
           .catch(err => console.log(err));
@@ -57,46 +57,49 @@ class SignUp extends React.Component {
           <h1>Sign Up</h1>
           <br />
           <Form>
-            <Form.Group controlId="userName">
-              <Form.Label>Name</Form.Label>
+            <Form.Group controlId="formBasicUsername">
+              <Form.Label>Username</Form.Label>
               <Form.Control
-                value={this.state.userName}
+                value={this.state.username}
                 onChange={this.handleInputChange}
-                type="text"
-                placeholder="Enter name"
+                name="username"
+                type="input"
+                placeholder="Enter Username"
               />
             </Form.Group>
-
-            <Form.Group controlId="userEmail">
+            <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
-                value={this.state.userEmail}
+                value={this.state.email}
                 onChange={this.handleInputChange}
-                type="email"
+                name="email"
+                type="input"
                 placeholder="Enter email"
               />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
             </Form.Group>
-
-            <Form.Group controlId="userPassword">
+            <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
-                value={this.state.userPassword}
+                value={this.state.password}
                 onChange={this.handleInputChange}
+                name="password"
                 type="password"
                 placeholder="Password"
               />
             </Form.Group>
-
-            <Form.Group controlId="userPassword2">
-              <Form.Label>Re-enter YourPassword</Form.Label>
+            <Form.Group controlId="formBasicPassword2">
+              <Form.Label>Confirm Password</Form.Label>
               <Form.Control
-                value={this.state.userPassword2}
+                value={this.state.password2}
                 onChange={this.handleInputChange}
+                name="password2"
                 type="password"
                 placeholder="Password"
               />
             </Form.Group>
-
             <Button
               onClick={this.handleFormSubmit}
               variant="primary"
