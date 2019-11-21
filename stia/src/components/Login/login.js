@@ -72,11 +72,7 @@ class Login extends React.Component {
                 placeholder="Password"
               />
             </Form.Group>
-            <Button
-              onClick={this.handleFormSubmit}
-              variant="primary"
-              type="submit"
-            >
+            <Button href="/help" variant="primary" type="submit">
               Submit
             </Button>
           </Form>
@@ -91,3 +87,7 @@ class Login extends React.Component {
   }
 }
 export default Login;
+
+{
+  /* onClick={this.handleFormSubmit} THIS GOES IN SUBMIT BUTTON*/
+}
