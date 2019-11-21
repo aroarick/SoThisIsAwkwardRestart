@@ -1,0 +1,25 @@
+import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <>
+        <Navbar bg="light" variant="light">
+          <Navbar.Brand href="#home">So This Is Awkward</Navbar.Brand>
+          <Nav className="ml-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/help">Help Me, Help You, Help Someone</Nav.Link>
+            <Nav.Link href="/loginSignUp">Login or SignUp</Nav.Link>
+          </Nav>
+        </Navbar>
+      </>
+    );
+  }
+}
+export default Home;
