@@ -54,7 +54,7 @@ class SignUp extends React.Component {
         </Navbar>
         <br />
         <Container>
-          <h1>Sign Up</h1>
+          <h1 id="signUp-title">Sign Up</h1>
           <br />
           <Form>
             <Form.Group controlId="formBasicUsername">
@@ -101,6 +101,7 @@ class SignUp extends React.Component {
               />
             </Form.Group>
             <Button
+              className="btn btn-custom"
               onClick={this.handleFormSubmit}
               variant="primary"
               type="submit"
@@ -108,6 +109,7 @@ class SignUp extends React.Component {
               Submit
             </Button>
           </Form>
+          <br />
         </Container>
       </>
     );

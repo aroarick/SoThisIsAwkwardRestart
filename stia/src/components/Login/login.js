@@ -46,7 +46,7 @@ class Login extends React.Component {
         </Navbar>
         <br />
         <Container>
-          <h1>Login</h1>
+          <h1 id="login-title">Login</h1>
           <br />
           <Form>
             <Form.Group controlId="formBasicEmail">
@@ -58,7 +58,7 @@ class Login extends React.Component {
                 type="input"
                 placeholder="Enter email"
               />
-              <Form.Text className="text-muted">
+              <Form.Text className="text-muted" id="texted-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
@@ -72,13 +72,23 @@ class Login extends React.Component {
                 placeholder="Password"
               />
             </Form.Group>
-            <Button href="/help" variant="primary" type="submit">
+            <Button
+              className="btn btn-custom"
+              href="/help"
+              variant="primary"
+              type="submit"
+            >
               Submit
             </Button>
           </Form>
-
-          <h5>Don't have an account?</h5>
-          <Button href="/signUp" variant="primary" type="submit">
+          <br />
+          <h5 id="account-promo">Don't have an account?</h5>
+          <Button
+            className="btn btn-custom"
+            href="/signUp"
+            variant="primary"
+            type="submit"
+          >
             Sign Up
           </Button>
         </Container>
