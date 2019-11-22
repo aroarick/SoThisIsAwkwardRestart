@@ -49,6 +49,8 @@ class SignUp extends React.Component {
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/help">Help Me, Help You, Help Someone</Nav.Link>
+            <Nav.Link href="/testimonials">Testimonials</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/login">Login or SignUp</Nav.Link>
           </Nav>
         </Navbar>

@@ -196,7 +196,34 @@ h1 {
   background-color: rgb(130, 182, 71);
 }
 
+/* Home */
+.btn-home-custom {
+  background-color: rgb(37, 40, 45);
+}
+
 /* Sign-Up Page */
 #signUp-title {
+  color: rgb(230, 140, 0);
+}
+
+/* About Page */
+#about-title {
+  color: rgb(230, 140, 0);
+}
+
+/* Help page */
+#help-title {
+  color: rgb(230, 140, 0);
+}
+
+#email,
+#theirEmail,
+#templateReasons,
+#customReasons {
+  color: rgb(88, 168, 201);
+}
+
+/* Testimonials */
+#testimonials-title {
   color: rgb(230, 140, 0);
 }

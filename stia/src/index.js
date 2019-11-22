@@ -9,6 +9,7 @@ import Login from "./components/Login/login";
 import SignUp from "./components/SignUo/signUp";
 import signedIn from "./components/signedIn/signedIn";
 import Testimonials from "./components/testimonials/testimonials";
+import About from "./components/About/about";
 
 import * as serviceWorker from "./serviceWorker";
 
@@ -22,6 +23,7 @@ const main = (
         <Route exact path="/signUp" component={SignUp} />
         <Route exact path="/signedIn" component={signedIn} />
         <Route exact path="/testimonials" component={Testimonials} />
+        <Route exact path="/about" component={About} />
       </Switch>
     </Router>
   </div>

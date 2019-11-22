@@ -29,7 +29,7 @@ class Home extends React.Component {
           </Row>
           <Row className="row-4">
             <Col md={12}>
-              <Button className="help" href="/help">
+              <Button className="btn btn-home-custom help" href="/help">
                 Help Me Help You
               </Button>
             </Col>
@@ -38,7 +38,7 @@ class Home extends React.Component {
         <Col md={3} className="column-3">
           <Row className="row-5">
             <Col md={12}>
-              <Button className="login" href="/login">
+              <Button className="btn btn-home-custom login" href="/login">
                 Login Or Sign Up
               </Button>
             </Col>
@@ -48,7 +48,10 @@ class Home extends React.Component {
           </Row>
           <Row className="row-7">
             <Col md={12}>
-              <Button className="testimonials" href="/testimonials">
+              <Button
+                className="btn btn-home-custom testimonials"
+                href="/testimonials"
+              >
                 Testimonials
               </Button>
             </Col>
@@ -58,7 +61,9 @@ class Home extends React.Component {
           </Row>
           <Row className="row-9">
             <Col md={12}>
-              <Button className="about">About</Button>
+              <Button className="btn btn-home-custom about" href="/about">
+                About
+              </Button>
             </Col>
           </Row>
         </Col>

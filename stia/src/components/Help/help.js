@@ -18,24 +18,26 @@ class Help extends React.Component {
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/help">Help Me, Help You, Help Someone</Nav.Link>
+            <Nav.Link href="/testimonials">Testimonials</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/login">Login or SignUp</Nav.Link>
           </Nav>
         </Navbar>
         <br />
         <Container>
-          <h1>Help Me, Help You, Help Someone</h1>
+          <h1 id="help-title">Help Me, Help You, Help Someone</h1>
           <br />
           <Form>
             <Form.Group controlId="userEmail">
-              <Form.Label>Your Email Address</Form.Label>
+              <Form.Label id="email">Your Email Address</Form.Label>
               <Form.Control type="email" placeholder="valkilmer@gmail.com" />
             </Form.Group>
             <Form.Group controlId="sendeeEmail">
-              <Form.Label>Their Email Address</Form.Label>
+              <Form.Label id="theirEmail">Their Email Address</Form.Label>
               <Form.Control type="email" placeholder="tomcruise@gmail.com" />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect2">
-              <Form.Label>Template Reasons</Form.Label>
+              <Form.Label id="templateReasons">Template Reasons</Form.Label>
               <Form.Control as="select" multiple>
                 <option>Wuv, Twu Wuv</option>
                 <option>
@@ -52,11 +54,15 @@ class Help extends React.Component {
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Or Write Your Own Reason</Form.Label>
+              <Form.Label id="customReasons">
+                Or Write Your Own Reason
+              </Form.Label>
               <Form.Control as="textarea" rows="3" />
             </Form.Group>
           </Form>
-          <Button variant="primary">Primary</Button>
+          <Button className="btn btn-custom" variant="primary">
+            Submit
+          </Button>
         </Container>
       </>
     );
