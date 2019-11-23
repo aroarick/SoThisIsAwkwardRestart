@@ -10,6 +10,9 @@ class Help extends React.Component {
     super(props);
     this.state = {};
   }
+  submit = e => {
+    console.log(e);
+  };
   render() {
     return (
       <>
@@ -28,39 +31,33 @@ class Help extends React.Component {
           <h1 id="help-title">Help Me, Help You, Help Someone</h1>
           <br />
           <Form>
-            <Form.Group controlId="userEmail">
-              <Form.Label id="email">Your Email Address</Form.Label>
-              <Form.Control type="email" placeholder="valkilmer@gmail.com" />
-            </Form.Group>
             <Form.Group controlId="sendeeEmail">
               <Form.Label id="theirEmail">Their Email Address</Form.Label>
               <Form.Control type="email" placeholder="tomcruise@gmail.com" />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect2">
-              <Form.Label id="templateReasons">Template Reasons</Form.Label>
+              <Form.Label id="templateReasons">Reasons</Form.Label>
               <Form.Control as="select" multiple>
-                <option>Wuv, Twu Wuv</option>
-                <option>
-                  My code doesn't work and im hungry so I am blaming you
-                </option>
-                <option>Stinky Feet</option>
-                <option>Bad Breath</option>
-                <option>Too Much PDA</option>
-                <option>Smell Like Smoke</option>
-                <option>Stinks in general</option>
-                <option>Bad Work Ethic</option>
-                <option>You are a rascal</option>
+                <option>You're pretty</option>
+                <option>You're handsome</option>
+                <option>You're unsettling to my eyes</option>
+                <option>Your breath stinks</option>
+                <option>Your feet stink</option>
+                <option>You stink</option>
+                <option>You have bad work ethic</option>
+                <option>You are not doing enough</option>
+                <option>You suck</option>
+                <option>I don't like your friends</option>
+                <option>I don't like your family</option>
                 <option>I just don't like you</option>
               </Form.Control>
             </Form.Group>
-            <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label id="customReasons">
-                Or Write Your Own Reason
-              </Form.Label>
-              <Form.Control as="textarea" rows="3" />
-            </Form.Group>
           </Form>
-          <Button className="btn btn-custom" variant="primary">
+          <Button
+            className="btn btn-custom"
+            variant="primary"
+            onClick={this.submit}
+          >
             Submit
           </Button>
         </Container>

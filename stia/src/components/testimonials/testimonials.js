@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 
 class Testimonials extends React.Component {
   constructor(props) {
@@ -22,6 +25,22 @@ class Testimonials extends React.Component {
         </Navbar>
 
         <h1 id="testimonials-title">Testimonials</h1>
+        <Container>
+          <Form>
+            <Form.Group controlId="user-Name">
+              <Form.Label>Your name</Form.Label>
+              <Form.Control type="email" placeholder="Enter Name" />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Comment</Form.Label>
+              <Form.Control type="text" placeholder="Comment" rows="3" />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </Container>
       </>
     );
   }

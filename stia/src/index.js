@@ -12,7 +12,6 @@ import Testimonials from "./components/testimonials/testimonials";
 import About from "./components/About/about";
 
 import * as serviceWorker from "./serviceWorker";
-
 const main = (
   <div>
     <Router>

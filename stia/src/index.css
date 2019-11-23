@@ -207,8 +207,12 @@ h1 {
 }
 
 /* About Page */
-#about-title {
+#about-title,
+#about-FAQ {
   color: rgb(230, 140, 0);
+}
+#about-paragraph {
+  color: white;
 }
 
 /* Help page */
