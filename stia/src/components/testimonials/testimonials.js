@@ -38,7 +38,11 @@ class Testimonials extends React.Component {
               <Form.Label>Comment</Form.Label>
               <Form.Control type="text" placeholder="Comment" rows="3" />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button
+              className="btn btn-custom submitTestimonial"
+              variant="primary"
+              type="submit"
+            >
               Submit
             </Button>
           </Form>

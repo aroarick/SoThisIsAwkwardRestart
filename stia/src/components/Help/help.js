@@ -50,7 +50,6 @@ class Help extends React.Component {
                     <option>Your hair looks awesome</option>
                     <option>Your hair is a wreck</option>
                     <option>Your makeup is amazing</option>
-                    <option>Your makeup could use some work</option>
                   </Form.Control>
                 </Col>
                 <Col id="hygiene">
