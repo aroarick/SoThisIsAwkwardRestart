@@ -194,6 +194,12 @@ h1 {
 
 .btn-custom {
   background-color: rgb(130, 182, 71);
+  border: rgb(130, 182, 71);
+}
+a.loginSubmit:hover,
+a.signUpPls:hover,
+a.helpSubmit:hover {
+  background: rgb(88, 168, 201);
 }
 
 /* Home */
@@ -254,6 +260,13 @@ a.about:hover {
 #templateReasons,
 #customReasons {
   color: rgb(88, 168, 201);
+}
+
+#apperance-col,
+#hygiene-col,
+#work-and-school-col,
+#personal-col {
+  color: rgb(195, 103, 106);
 }
 
 /* Testimonials */

@@ -75,7 +75,7 @@ class Login extends React.Component {
               />
             </Form.Group>
             <Button
-              className="btn btn-custom"
+              className="btn btn-custom loginSubmit"
               href="/help"
               variant="primary"
               type="submit"
@@ -86,7 +86,7 @@ class Login extends React.Component {
           <br />
           <h5 id="account-promo">Don't have an account?</h5>
           <Button
-            className="btn btn-custom"
+            className="btn btn-custom signUpPls"
             href="/signUp"
             variant="primary"
             type="submit"
