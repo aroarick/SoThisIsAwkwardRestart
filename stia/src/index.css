@@ -1,6 +1,7 @@
 body {
-  text-align: center;
+  /* text-align: center; */
   background: rgb(37, 40, 45);
+  font-family: "Prata", serif;
 }
 
 h1 {
@@ -166,7 +167,6 @@ h1 {
   background-color: rgb(195, 103, 106);
 }
 
-.logo,
 .help,
 .login,
 .testimonials,
@@ -177,9 +177,11 @@ h1 {
 }
 
 #logo-image {
-  padding-left: 0px;
-  width: 400px;
-  height: 300px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: left;
+  width: 250px;
+  height: 280px;
 }
 
 /* Login */
@@ -198,7 +200,8 @@ h1 {
 }
 a.loginSubmit:hover,
 a.signUpPls:hover,
-a.helpSubmit:hover {
+a.helpSubmit:hover,
+a.submitSignUp:hover {
   background: rgb(88, 168, 201);
 }
 
@@ -207,6 +210,34 @@ a.helpSubmit:hover {
   background-color: rgb(37, 40, 45);
   border: rgb(37, 40, 45);
 }
+
+.help {
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.login {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.testimonials {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.about {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
 a.help:hover {
   background: linear-gradient(
     0deg,
@@ -239,20 +270,24 @@ a.about:hover {
 /* Sign-Up Page */
 #signUp-title {
   color: rgb(230, 140, 0);
+  text-align: center;
 }
 
 /* About Page */
 #about-title,
 #about-FAQ {
   color: rgb(230, 140, 0);
+  text-align: center;
 }
 #about-paragraph {
   color: white;
+  text-align: center;
 }
 
 /* Help page */
 #help-title {
   color: rgb(230, 140, 0);
+  text-align: center;
 }
 
 #email,
@@ -260,6 +295,7 @@ a.about:hover {
 #templateReasons,
 #customReasons {
   color: rgb(88, 168, 201);
+  text-align: center;
 }
 
 #apperance-col,
@@ -267,9 +303,12 @@ a.about:hover {
 #work-and-school-col,
 #personal-col {
   color: rgb(195, 103, 106);
+  text-align: center;
 }
 
 /* Testimonials */
 #testimonials-title {
+  text-align: center;
   color: rgb(230, 140, 0);
+  text-align: center;
 }

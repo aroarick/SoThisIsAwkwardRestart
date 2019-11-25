@@ -24,7 +24,9 @@ class Testimonials extends React.Component {
           </Nav>
         </Navbar>
 
+        <br />
         <h1 id="testimonials-title">Testimonials</h1>
+        <Container></Container>
         <Container>
           <Form>
             <Form.Group controlId="user-Name">

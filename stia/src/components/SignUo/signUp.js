@@ -103,7 +103,7 @@ class SignUp extends React.Component {
               />
             </Form.Group>
             <Button
-              className="btn btn-custom"
+              className="btn btn-custom submitSignUp"
               onClick={this.handleFormSubmit}
               variant="primary"
               type="submit"

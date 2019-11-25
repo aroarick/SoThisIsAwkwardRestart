@@ -15,7 +15,7 @@ class Home extends React.Component {
         <Col md={5} className="column-1">
           <Row className="row-1">
             <Col id="title" md={12}>
-              <Image id="logo-image" src="images/logo.svg" />
+              <Image id="logo-image" src="images/logo-dark-cropped.PNG" />
               {/* <img src={logo.svg} style={nbStyle.logo} alt="fireSpot" /> */}
             </Col>
           </Row>
@@ -30,7 +30,7 @@ class Home extends React.Component {
           <Row className="row-4">
             <Col md={12}>
               <Button className="btn btn-home-custom help" href="/help">
-                Help Me Help You
+                Help Me, Help You, Help Someone
               </Button>
             </Col>
           </Row>
