@@ -2,6 +2,7 @@ body {
   /* text-align: center; */
   background: rgb(37, 40, 45);
   font-family: "Prata", serif;
+  color: white;
 }
 
 h1 {
@@ -98,7 +99,7 @@ h1 {
 }
 @media (min-width: 768px) {
   .row-1 {
-    height: 300px;
+    height: 350%;
   }
 }
 
@@ -184,6 +185,31 @@ h1 {
   height: 280px;
 }
 
+span#blue {
+  color: white;
+  background-color: rgb(88, 168, 201);
+  border-radius: 50%;
+  padding: 10px;
+}
+span#orange {
+  color: white;
+  background-color: rgb(230, 140, 0);
+  border-radius: 50%;
+  padding: 10px;
+}
+span#green {
+  color: white;
+  background-color: rgb(130, 182, 71);
+  border-radius: 50%;
+  padding: 10px;
+}
+span#pink {
+  color: white;
+  background-color: rgb(195, 103, 106);
+  border-radius: 50%;
+  padding: 10px;
+}
+
 /* Login */
 #login-title {
   color: rgb(230, 140, 0);
@@ -195,8 +221,8 @@ h1 {
 }
 
 .btn-custom {
-  background-color: rgb(130, 182, 71);
-  border: rgb(130, 182, 71);
+  background-color: rgb(195, 103, 106);
+  border: rgb(195, 103, 106);
 }
 a.loginSubmit:hover,
 a.signUpPls:hover,
@@ -274,41 +300,71 @@ a.about:hover {
 }
 
 /* About Page */
-#about-title,
 #about-FAQ {
-  color: rgb(230, 140, 0);
+  color: rgb(88, 168, 201);
   text-align: center;
 }
-#about-paragraph {
+
+#FAQ-1-Q,
+#FAQ-2-Q {
   color: white;
-  text-align: center;
+  text-align: left;
+}
+#FAQ-1-A,
+#FAQ-2-A {
+  color: rgb(230, 140, 0);
+  text-align: right;
 }
 
 /* Help page */
 #help-title {
-  color: rgb(230, 140, 0);
+  color: rgb(88, 168, 201);
   text-align: center;
 }
 
 #email,
 #theirEmail,
-#templateReasons,
-#customReasons {
-  color: rgb(88, 168, 201);
+#templateReasons {
+  color: rgb(230, 140, 0);
   text-align: center;
 }
 
-#apperance-col,
-#hygiene-col,
-#work-and-school-col,
-#personal-col {
-  color: rgb(195, 103, 106);
+#issue-col {
   text-align: center;
+  color: rgb(130, 182, 71);
+}
+
+#issue-button {
+  background: rgb(37, 40, 45);
+  border: 2px solid rgb(130, 182, 71);
+}
+
+#helpSubmit {
+  text-align: center;
+}
+
+#issue-button:hover,
+#issue-button.highlight:hover {
+  background: rgb(130, 182, 71);
 }
 
 /* Testimonials */
 #testimonials-title {
   text-align: center;
-  color: rgb(230, 140, 0);
+  color: rgb(88, 168, 201);
   text-align: center;
+}
+
+#exampleName {
+  color: white;
+  text-align: left;
+}
+
+#exampleText {
+  color: rgb(230, 140, 0);
+  text-align: right;
+}
+
+#testimonial-submit {
+  color: rgb(130, 182, 71);
 }

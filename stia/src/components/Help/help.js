@@ -7,24 +7,71 @@ import Nav from "react-bootstrap/Nav";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
+const axios = require("axios");
+
+function getReasons(that) {
+  axios.get("reasons.json").then(function(response) {
+    console.log(response);
+    let issues = [];
+    for (var i = 0; i < response.data.catagories.length; i++) {
+      let catagory = response.data.catagories[i];
+      issues.push(<h4 key={i}>{catagory.name}</h4>);
+      for (var v = 0; v < catagory.issues.length; v++) {
+        let issue = catagory.issues[v];
+        issues.push(
+          <Button id="issue-button" key={i + "-" + v}>
+            {issue.text}
+          </Button>
+        );
+      }
+      console.log();
+    }
+    that.setState({
+      uiIssues: issues
+    });
+  });
+}
+
 class Help extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      uiIssues: []
+    };
   }
+
   submit = e => {
-    console.log(e);
+    axios
+      .post("http://localhost:5000/api/v1/message", {
+        // emailAddress: "ahorseroar@gmail.com",
+        // htmlMessage: "<h1>I am sending this from stia...kinda...sorta</h1>",
+        // subject: "so this is awkward",
+        // textMessage: "Sup"
+        emailAddres: "sendeeEmail"
+      })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
   };
+  componentDidMount() {
+    getReasons(this);
+  }
   render() {
     return (
       <>
         <Navbar bg="dark" variant="dark">
-          <Navbar.Brand>So This Is Awkward</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <span id="blue">So</span> <span id="orange">This</span>{" "}
+            <span id="green">Is</span> <span id="pink">Awkward</span>
+          </Navbar.Brand>
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/help">Help Me, Help You, Help Someone</Nav.Link>
             <Nav.Link href="/testimonials">Testimonials</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/about">FAQ</Nav.Link>
             <Nav.Link href="/login">Login or SignUp</Nav.Link>
           </Nav>
         </Navbar>
@@ -34,57 +81,20 @@ class Help extends React.Component {
           <br />
           <Form>
             <Form.Group controlId="sendeeEmail">
-              <Form.Label id="theirEmail">Their Email Address</Form.Label>
+              <h2 id="theirEmail">Their Email Address</h2>
               <Form.Control type="email" placeholder="tomcruise@gmail.com" />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect2">
-              <Form.Label id="templateReasons">Reasons</Form.Label>
+              <h2 id="templateReasons">Reasons</h2>
               <br />
               <Row>
-                <Col id="apperance">
-                  <Form.Label id="apperance-col">Apperance</Form.Label>
-                  <Form.Control as="select" multiple>
-                    <option>You're pretty</option>
-                    <option>You're handsome</option>
-                    <option>You're unsettling to my eyes</option>
-                    <option>Your hair looks awesome</option>
-                    <option>Your hair is a wreck</option>
-                    <option>Your makeup is amazing</option>
-                  </Form.Control>
-                </Col>
-                <Col id="hygiene">
-                  <Form.Label id="hygiene-col">Hygiene</Form.Label>
-                  <Form.Control as="select" multiple>
-                    <option>Your breath stinks</option>
-                    <option>Your feet stink</option>
-                    <option>You stink</option>
-                    <option>You should maybe shower more</option>
-                  </Form.Control>
-                </Col>
-                <Col id="work-and-school">
-                  <Form.Label id="work-and-school-col">
-                    Work and School
-                  </Form.Label>
-                  <Form.Control as="select" multiple>
-                    <option>You have bad work ethic</option>
-                    <option>You are not doing enough</option>
-                    <option>You suck</option>
-                    <option>You are doing an amazing job</option>
-                  </Form.Control>
-                </Col>
-                <Col id="personal">
-                  <Form.Label id="personal-col">Personal</Form.Label>
-                  <Form.Control as="select" multiple>
-                    <option>I don't like your friends</option>
-                    <option>I don't like your family</option>
-                    <option>I just don't like you</option>
-                  </Form.Control>
-                </Col>
+                <Col id="issue-col">{this.state.uiIssues}</Col>
               </Row>
             </Form.Group>
           </Form>
           <Button
-            className="btn btn-custom helpSubmit"
+            id="helpSubmit"
+            className="btn-custom"
             variant="primary"
             onClick={this.submit}
           >
