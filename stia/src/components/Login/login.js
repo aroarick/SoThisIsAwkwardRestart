@@ -101,10 +101,3 @@ class Login extends React.Component {
   }
 }
 export default Login;
-<<<<<<< HEAD
-=======
-
-// {
-//   /* onClick={this.handleFormSubmit} THIS GOES IN SUBMIT BUTTON*/
-// }
->>>>>>> bc183338da521e45d0a740a3651d4728758f881c
