@@ -1,0 +1,206 @@
+{
+  "catagories": [
+    {
+      "name": "Hygiene",
+      "issues": [
+        {
+          "text": "Stinky Breath",
+          "description": "The person that this is being sent to has stinky breath",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>The person who sent this doesn't want to seem out of line, but they think your breath kinda stinks</h1>",
+              "text": "The person who sent this doesn't want to seem out of line, but they think your breath kinda stinks"
+            },
+            "blunt": {
+              "html": "<h1>The person who sent this thinks breath stinks</h1>",
+              "text": "The person who sent this thinks breath stinks"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        },
+        {
+          "text": "Smell Like Smoke",
+          "description": "The person you are sending this to smells like smoke",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>Someone is sorry to tell you this, but they think you have a very strong smokey smell.</h1>",
+              "text": "Someone is sorry to tell you this, but they think you have a very strong smokey smell."
+            },
+            "blunt": {
+              "html": "<h1>Someone thinks you smell like cigarette smoke</h1>",
+              "text": "Someone thinks you smell like cigarette smoke"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        },
+        {
+          "text": "Body Odour",
+          "description": "The person you are sending this to has really bad BO",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>I hope this is helpful, but the person who sent you this thinks you have some body odour</h1>",
+              "text": "I hope this is helpful, but the person who sent you this thinks you have some body odour"
+            },
+            "blunt": {
+              "html": "<h1>Someone thinks you stink, like BO stink</h1>",
+              "text": "Someone thinks you stink, like BO stink"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        },
+        {
+          "text": "Food In Teeth",
+          "description": "The person this is being sent to has food in their teeth",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>I hope this is helpful, someone noticed you seem to have food in your teeth</h1>",
+              "text": "I hope this is helpful, someone noticed you seem to have food in your teeth"
+            },
+            "blunt": {
+              "html": "<h1>Someone noticed you have food in your teeth</h1>",
+              "text": "Someone noticed you have food in your teeth"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        }
+      ]
+    },
+    {
+      "name": "Manners",
+      "issues": [
+        {
+          "text": "Loud Inside Voice",
+          "description": "The person that this is being sent to talks very loudly",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>The person who sent this doesnt't want to seem out of line, but they think you talk too loud</h1>",
+              "text": "The person who sent this doesnt't want to seem out of line, but they think you talk too loud"
+            },
+            "blunt": {
+              "html": "<h1>The person who sent this thinks you need to take your inside voice down 5 notches</h1>",
+              "text": "The person who sesnt this thinks you need to take your inside voice down 5 notches"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        },
+        {
+          "text": "Close Talker",
+          "description": "The person you are sending this to talks very closely",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>The person who sent this doesn't want to seem rude, but they think you talk very close to people, and it makes them uncomfortable</h1>",
+              "text": "The person who sent this doesn't want to seem rude, but they think you talk very close to people, and it makes them uncomfortable"
+            },
+            "blunt": {
+              "html": "<h1>The person who sent this says, 'You break my personal bubble when you talk to me'</h1>",
+              "text": "The person who sent this says, 'You break my personal bubble when you talk to me'"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        },
+        {
+          "text": "Big Smacker",
+          "description": "The person you are sending this to smacks their lips",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>I hope this is helpful, but someone thinks you smack your lips when you eat</h1>",
+              "text": "I hope this is helpful, but someone thinks you smack your lips when you eat"
+            },
+            "blunt": {
+              "html": "<h1>The person who sent this thinks you need to stop smacking</h1>",
+              "text": "The person who sent this thinks you need to stop smacking"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        },
+        {
+          "text": "Talk Too Much",
+          "description": "The person you are sending this to talks too much",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>I don't mean to sound rude, but a concerned third part can't focus on what they need to do because you talk too much.</h1>",
+              "text": "I don't mean to sound rude, but a concerned third part can't focus on what they need to do because you talk too much."
+            },
+            "blunt": {
+              "html": "<h1>A concerned third party thinks you talk to much</h1>",
+              "text": "A concerned third party thinks you talk to much"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        }
+      ]
+    },
+    {
+      "name": "School and Workplace",
+      "issues": [
+        {
+          "text": "Not Doing Their Part",
+          "description": "The person that this is being sent to is not doing their part on a project, homework, etc",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>I don't want to make a big deal, but the person who sent you this thinks you are not doing as much as you should for their group</h1>",
+              "text": "I don't want to make a big deal, but the person who sent you this thinks you are not doing as much as you should for their group"
+            },
+            "blunt": {
+              "html": "<h1>The person who sent you this says 'You need to get your head in the game and do your part'</h1>",
+              "text": "The person who sent you this says 'You need to get your head in the game and do your part'"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        },
+        {
+          "text": "Doing too much/Controlling",
+          "description": "The person you are sending this to refuses to let you work or controls the project too much",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>Someone doesn't want to seem rude, but you are not letting them work on their part of yall's project. Please let them do what needs to be done.</h1>",
+              "text": "Someone doesn't want to seem rude, but you are not letting them work on their part of yall's project. Please let them do what needs to be done."
+            },
+            "blunt": {
+              "html": "<h1>Someone can't do their part of yall's project because you won't let them. You focus on your part, they'll focus on theirs.</h1>",
+              "text": "Someone can't do their part of yall's project because you won't let them. You focus on your part, they'll focus on theirs."
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        },
+        {
+          "text": "Opinionated",
+          "description": "The person you are sending this to blurts out their opinons with no filter",
+          "subject": "So...this is awkward, but someone wanted to tell you something...",
+          "firstThing": "Somebody has taken issue with something having to do with you.",
+          "messageTone": {
+            "apologetic": {
+              "html": "<h1>A concerned third party would greatly appreciate it if you would think before you speak</h1>",
+              "text": "A concerned third party would greatly appreciate it if you would think before you speak"
+            },
+            "blunt": {
+              "html": "<h1>Someone thinks you speak out of turn and it upsets them</h1>",
+              "text": "Someone thinks you speak out of turn and it upsets them"
+            }
+          },
+          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+        }
+      ]
+    }
+  ]
+}

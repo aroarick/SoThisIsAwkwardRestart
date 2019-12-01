@@ -61,7 +61,7 @@ class Home extends React.Component {
           <Row className="row-9">
             <Col md={12}>
               <Button className="btn btn-home-custom about" href="/about">
-                About
+                FAQ
               </Button>
             </Col>
           </Row>
