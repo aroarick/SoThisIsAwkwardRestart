@@ -89,7 +89,6 @@ class Login extends React.Component {
           <h5 id="account-promo">Don't have an account?</h5>
           <Button
             className="btn btn-custom signUpPls"
-            href="/signUp"
             variant="primary"
             type="submit"
           >
@@ -101,7 +100,3 @@ class Login extends React.Component {
   }
 }
 export default Login;
-
-// {
-//   /* onClick={this.handleFormSubmit} THIS GOES IN SUBMIT BUTTON*/
-// }
