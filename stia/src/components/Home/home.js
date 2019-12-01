@@ -11,12 +11,11 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <Row>
+      <Row style={{ height: "100%" }}>
         <Col md={5} className="column-1">
           <Row className="row-1">
             <Col id="title" md={12}>
               <Image id="logo-image" src="images/logo-dark-cropped.PNG" />
-              {/* <img src={logo.svg} style={nbStyle.logo} alt="fireSpot" /> */}
             </Col>
           </Row>
           <Row className="row-2">

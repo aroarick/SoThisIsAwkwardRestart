@@ -10,10 +10,10 @@ import SignUp from "./components/SignUo/signUp";
 import signedIn from "./components/signedIn/signedIn";
 import Testimonials from "./components/testimonials/testimonials";
 import About from "./components/About/about";
-
 import * as serviceWorker from "./serviceWorker";
+
 const main = (
-  <div>
+  <>
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -25,7 +25,7 @@ const main = (
         <Route exact path="/about" component={About} />
       </Switch>
     </Router>
-  </div>
+  </>
 );
 
 ReactDOM.render(main, document.getElementById("root"));

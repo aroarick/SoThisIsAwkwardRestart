@@ -8,6 +8,12 @@ h1 {
   font-size: 5em;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 .col,
 .col-1,
 .col-10,
@@ -98,7 +104,7 @@ h1 {
 }
 @media (min-width: 768px) {
   .row-1 {
-    height: 300px;
+    height: 33%;
   }
 }
 
