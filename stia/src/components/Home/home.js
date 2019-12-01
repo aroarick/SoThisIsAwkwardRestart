@@ -11,7 +11,7 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <Row>
+      <Row style={{ height: "100%" }}>
         <Col md={5} className="column-1">
           <Row className="row-1">
             <Col id="title" md={12}>
