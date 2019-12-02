@@ -11,7 +11,7 @@
           "messageTone": {
             "apologetic": {
               "html": "<h1>The person who sent this doesn't want to seem out of line, but they think your breath kinda stinks</h1>",
-              "text": "The person who sent this doesn't want to seem out of line, but they think your breath kinda stinks"
+              "text": "Somebody has taken issue with something having to do with you\n\nThe person who sent this doesn't want to seem out of line, but they think your breath kinda stinks"
             },
             "blunt": {
               "html": "<h1>The person who sent this thinks breath stinks</h1>",

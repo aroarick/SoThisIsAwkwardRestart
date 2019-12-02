@@ -15,6 +15,7 @@ const axios = require("axios");
 function getReasons(that) {
   axios.get("reasons.json").then(function(response) {
     let issues = [];
+    that.setState({ data: response.data });
     for (var i = 0; i < response.data.catagories.length; i++) {
       let category = response.data.catagories[i];
       issues.push(<h4 key={i}>{category.name}</h4>);
@@ -50,12 +51,42 @@ class Help extends React.Component {
     super(props);
     this.state = {
       uiIssues: [],
+      data: {},
       selectedIssue: null,
-      selectedTone: null
+      selectedTone: null,
+      emailAddress: ""
     };
   }
   submit = e => {
-    console.log("submit");
+    // Find issue data
+    let selectedIssue = this.state.selectedIssue;
+    let selectedTone = this.state.selectedTone;
+    let emailAddress = this.state.emailAddress;
+    let data = this.state.data;
+    let issueObject = null;
+
+    for (var cat = 0; cat < data.catagories.length; cat++) {
+      let category = data.catagories[cat];
+      for (var iss = 0; iss < category.issues.length; iss++) {
+        let issue = category.issues[iss];
+        if (issue.text === selectedIssue) {
+          issueObject = issue;
+        }
+      }
+    }
+
+    // build json for server
+    let emailPackage = {};
+    if (issueObject) {
+      emailPackage.emailAddress = emailAddress;
+      emailPackage.htmlMessage = issueObject.messageTone[selectedTone].html;
+      emailPackage.textMessage = issueObject.messageTone[selectedTone].text;
+      emailPackage.subject = issueObject.subject;
+
+      console.log(emailPackage);
+    } else {
+      alert("selected something you hoser");
+    }
 
     // axios
     //   .post("http://localhost:5000/api/v1/message", {
@@ -80,6 +111,11 @@ class Help extends React.Component {
   componentDidMount() {
     getReasons(this);
   }
+
+  handleEmailAddressChange = e => {
+    this.setState({ emailAddress: e.target.value });
+  };
+
   render() {
     return (
       <>
@@ -103,7 +139,12 @@ class Help extends React.Component {
           <Form>
             <Form.Group>
               <h2 id="theirEmail">Their Email Address</h2>
-              <Form.Control type="email" placeholder="tomcruise@gmail.com" />
+              <Form.Control
+                type="email"
+                placeholder="tomcruise@cruisin.com"
+                value={this.state.emailAddress}
+                onChange={this.handleEmailAddressChange}
+              />
             </Form.Group>
             <Form.Group>
               <h2 id="theirEmail">Tone</h2>
