@@ -83,7 +83,18 @@ class Help extends React.Component {
       emailPackage.textMessage = issueObject.messageTone[selectedTone].text;
       emailPackage.subject = issueObject.subject;
 
-      console.log(emailPackage);
+      axios
+        .post(
+          "http://localhost:3001/api/v1/message",
+          JSON.stringify(emailPackage),
+          {
+            headers: { "Content-Type": "application/json" }
+          }
+        )
+        .then(function(response) {})
+        .catch(function(error) {
+          console.log(error);
+        });
     } else {
       alert("selected something you hoser");
     }
