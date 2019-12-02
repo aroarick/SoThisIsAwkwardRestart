@@ -6,25 +6,38 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import ButtonToolbar from "react-bootstrap/ButtonToolbar";
+import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
+import ToggleButton from "react-bootstrap/ToggleButton";
 
 const axios = require("axios");
 
 function getReasons(that) {
   axios.get("reasons.json").then(function(response) {
-    console.log(response);
     let issues = [];
     for (var i = 0; i < response.data.catagories.length; i++) {
-      let catagory = response.data.catagories[i];
-      issues.push(<h4 key={i}>{catagory.name}</h4>);
-      for (var v = 0; v < catagory.issues.length; v++) {
-        let issue = catagory.issues[v];
+      let category = response.data.catagories[i];
+      issues.push(<h4 key={i}>{category.name}</h4>);
+      for (var v = 0; v < category.issues.length; v++) {
+        let issue = category.issues[v];
         issues.push(
-          <Button id="issue-button" key={i + "-" + v}>
+          <Button
+            id="issue-button"
+            key={i + "-" + v}
+            className={(() => {
+              if (issue.text === that.state.selectedIssue) {
+                return "selected";
+              }
+            })()}
+            onClick={() => {
+              that.setState({ selectedIssue: issue.text });
+              getReasons(that);
+            }}
+          >
             {issue.text}
           </Button>
         );
       }
-      console.log();
     }
     that.setState({
       uiIssues: issues
@@ -36,26 +49,34 @@ class Help extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      uiIssues: []
+      uiIssues: [],
+      selectedIssue: null,
+      selectedTone: null
     };
   }
-
   submit = e => {
-    axios
-      .post("http://localhost:5000/api/v1/message", {
-        // emailAddress: "ahorseroar@gmail.com",
-        // htmlMessage: "<h1>I am sending this from stia...kinda...sorta</h1>",
-        // subject: "so this is awkward",
-        // textMessage: "Sup"
-        emailAddres: "sendeeEmail"
-      })
-      .then(function(response) {
-        console.log(response);
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
+    console.log("submit");
+
+    // axios
+    //   .post("http://localhost:5000/api/v1/message", {
+    //     // emailAddress: "ahorseroar@gmail.com",
+    //     // htmlMessage: "<h1>I am sending this from stia...kinda...sorta</h1>",
+    //     // subject: "so this is awkward",
+    //     // textMessage: "Sup"
+    //     emailAddres: "sendeeEmail"
+    //   })
+    //   .then(function(response) {
+    //     console.log(response);
+    //   })
+    //   .catch(function(error) {
+    //     console.log(error);
+    //   });
   };
+
+  setTone(w) {
+    console.log(w);
+  }
+
   componentDidMount() {
     getReasons(this);
   }
@@ -80,11 +101,36 @@ class Help extends React.Component {
           <h1 id="help-title">Help Me, Help You, Help Someone</h1>
           <br />
           <Form>
-            <Form.Group controlId="sendeeEmail">
+            <Form.Group>
               <h2 id="theirEmail">Their Email Address</h2>
               <Form.Control type="email" placeholder="tomcruise@gmail.com" />
             </Form.Group>
-            <Form.Group controlId="exampleForm.ControlSelect2">
+            <Form.Group>
+              <h2 id="theirEmail">Tone</h2>
+              <ButtonToolbar>
+                <ToggleButtonGroup
+                  type="radio"
+                  name="options"
+                  defaultValue={this.state.selectedTone}
+                >
+                  <ToggleButton
+                    value={"blunt"}
+                    onClick={() => this.setState({ selectedTone: "blunt" })}
+                  >
+                    Blunt
+                  </ToggleButton>
+                  <ToggleButton
+                    value={"apologetic"}
+                    onClick={() =>
+                      this.setState({ selectedTone: "apologetic" })
+                    }
+                  >
+                    Apologetic
+                  </ToggleButton>
+                </ToggleButtonGroup>
+              </ButtonToolbar>
+            </Form.Group>
+            <Form.Group>
               <h2 id="templateReasons">Reasons</h2>
               <br />
               <Row>

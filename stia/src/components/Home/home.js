@@ -15,8 +15,7 @@ class Home extends React.Component {
         <Col md={5} className="column-1">
           <Row className="row-1">
             <Col id="title" md={12}>
-              <Image id="logo-image" src="images/logo-dark-cropped.PNG" fluid />
-              {/* <img src={logo.svg} style={nbStyle.logo} alt="fireSpot" /> */}
+              <Image id="logo-image" src="images/logo-dark-cropped.PNG" />
             </Col>
           </Row>
           <Row className="row-2">

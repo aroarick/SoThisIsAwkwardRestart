@@ -100,6 +100,7 @@ body,
 
 .column-1 {
   background-color: rgb(37, 40, 45);
+  height: auto;
 }
 .column-2 {
   background-color: rgb(88, 168, 201);
@@ -172,16 +173,16 @@ body,
   height: 100px;
 }
 .color-block-1 {
-  background: #fff8ef;
+  background: $whiteish;
 }
 .color-block-2 {
-  background-color: rgb(88, 168, 201);
+  background-color: $whiteish;
 }
 .color-block-3 {
-  background-color: rgb(130, 182, 71);
+  background-color: $whiteish;
 }
 .color-block-4 {
-  background-color: rgb(195, 103, 106);
+  background-color: $whiteish;
 }
 
 .help,
@@ -194,11 +195,8 @@ body,
 }
 
 #logo-image {
-  margin-top: 10px;
-  margin-left: 10px;
-  text-align: left;
-  width: 250px;
-  height: 280px;
+  max-width: 100%;
+  height: 100%;
 }
 
 span#blue {
@@ -248,6 +246,9 @@ a.submitSignUp:hover {
 }
 
 /* Home */
+#title {
+  height: 100%;
+}
 .btn-home-custom {
   background-color: rgb(37, 40, 45);
   border: rgb(37, 40, 45);
@@ -354,14 +355,15 @@ a.about:hover {
   background: rgb(37, 40, 45);
   border: 2px solid rgb(130, 182, 71);
 }
+#issue-button.selected {
+  background-color: rgb(130, 182, 71);
+}
+#issue-button:hover {
+  background: rgb(130, 182, 71);
+}
 
 #helpSubmit {
   text-align: center;
-}
-
-#issue-button:hover,
-#issue-button.highlight:hover {
-  background: rgb(130, 182, 71);
 }
 
 /* Testimonials */
