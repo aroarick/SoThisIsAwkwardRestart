@@ -1,9 +1,9 @@
 module.exports = {
   postMessage: function(request, response) {
     const sgMail = require("@sendgrid/mail");
-    sgMail.setApiKey(
-      "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"
-    );
+    const key = process.env.SENDGRID_API_KEY;
+
+    sgMail.setApiKey(key);
 
     const msg = {
       to: request.body.emailAddress,
@@ -13,7 +13,13 @@ module.exports = {
       html: request.body.htmlMessage
     };
 
-    sgMail.send(msg);
-    response.json({ response: "good" });
+    sgMail
+      .send(msg)
+      .then(function(value) {
+        response.json({ response: "good" });
+      })
+      .catch(function(error) {
+        response.json({ response: "bad", error: error });
+      });
   }
 };
