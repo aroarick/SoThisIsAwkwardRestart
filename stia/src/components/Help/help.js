@@ -168,7 +168,7 @@ class Help extends React.Component {
                 more direct and to the point, whereas apologetic would be
                 easier.
               </h5>
-              <ButtonToolbar>
+              <ButtonToolbar id="toneButtons">
                 <ToggleButtonGroup
                   type="radio"
                   name="options"
