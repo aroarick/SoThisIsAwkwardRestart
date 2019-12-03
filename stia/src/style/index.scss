@@ -189,9 +189,9 @@ body,
 .login,
 .testimonials,
 .about {
-  height: 100%;
-  width: 100%;
-  border-radius: 0px;
+  // height: 100%;
+  // width: 100%;
+  // border-radius: 0px;
 }
 
 #logo-image {
@@ -226,6 +226,7 @@ span#pink {
 
 /* Login */
 #login-title {
+  font-family: "Bowlby One SC", cursive;
   color: rgb(230, 140, 0);
 }
 
@@ -242,7 +243,7 @@ a.loginSubmit:hover,
 a.signUpPls:hover,
 a.helpSubmit:hover,
 a.submitSignUp:hover {
-  background: rgb(88, 168, 201);
+  // background: rgb(88, 168, 201);
 }
 
 /* Home */
@@ -250,11 +251,14 @@ a.submitSignUp:hover {
   height: 100%;
 }
 .btn-home-custom {
+  text-align: left;
+  font-family: "Bowlby One SC", cursive;
   background-color: rgb(37, 40, 45);
   border: rgb(37, 40, 45);
 }
 
 .help {
+  color: #25282f;
   padding-top: 50px;
   color: white;
   text-align: center;
@@ -262,62 +266,53 @@ a.submitSignUp:hover {
 }
 
 .login {
+  padding-top: 70px;
   color: white;
   text-align: center;
   font-size: 3em;
 }
 
 .testimonials {
-  padding-top: 20px;
+  padding-top: 70px;
   color: white;
   text-align: center;
   font-size: 3em;
 }
 
 .about {
-  padding-top: 20px;
+  padding-top: 70px;
   color: white;
   text-align: center;
   font-size: 3em;
 }
 
 a.help:hover {
-  background: linear-gradient(
-    0deg,
-    rgba(235, 164, 51, 1) 0%,
-    rgba(207, 127, 0, 1) 100%
-  );
+  color: rgb(88, 168, 201);
+  background: linear-gradient(0deg, rgb(37, 40, 45) 0%, rgb(37, 40, 45) 100%);
 }
 a.login:hover {
-  background: linear-gradient(
-    0deg,
-    rgba(120, 186, 211, 1) 0%,
-    rgba(78, 152, 180, 1) 100%
-  );
+  color: rgb(230, 140, 0);
+  background: linear-gradient(0deg, rgb(37, 40, 45) 0%, rgb(37, 40, 45) 100%);
 }
 a.testimonials:hover {
-  background: linear-gradient(
-    0deg,
-    rgba(155, 196, 107, 1) 0%,
-    rgba(117, 163, 63, 1) 100%
-  );
+  color: rgb(130, 182, 71);
+  background: linear-gradient(0deg, rgb(37, 40, 45) 0%, rgb(37, 40, 45) 100%);
 }
 a.about:hover {
-  background: linear-gradient(
-    0deg,
-    rgba(207, 132, 135, 1) 0%,
-    rgba(175, 91, 95, 1) 100%
-  );
+  color: rgb(195, 103, 106);
+  background: linear-gradient(0deg, rgb(37, 40, 45) 0%, rgb(37, 40, 45) 100%);
 }
 
 /* Sign-Up Page */
 #signUp-title {
+  font-family: "Bowlby One SC", cursive;
   color: rgb(230, 140, 0);
   text-align: center;
 }
 
 /* About Page */
 #about-FAQ {
+  font-family: "Bowlby One SC", cursive;
   color: rgb(88, 168, 201);
   text-align: center;
 }
@@ -335,23 +330,41 @@ a.about:hover {
 
 /* Help page */
 #help-title {
+  font-family: "Bowlby One SC", cursive;
   color: rgb(88, 168, 201);
   text-align: center;
+}
+
+#bluntButton,
+#apologeticButton {
+  font-family: "Exo", sans-serif;
+  background: rgb(130, 182, 71);
+  border: rgb(130, 182, 71);
+}
+
+#bluntButton {
+  border-right: 5px solid rgb(37, 40, 45);
 }
 
 #email,
 #theirEmail,
 #templateReasons {
+  font-family: "Exo", sans-serif;
+
   color: rgb(230, 140, 0);
   text-align: center;
 }
 
 #issue-col {
+  font-family: "Exo", sans-serif;
+
   text-align: center;
   color: rgb(130, 182, 71);
 }
 
 #issue-button {
+  font-family: "Exo", sans-serif;
+
   background: rgb(37, 40, 45);
   border: 2px solid rgb(130, 182, 71);
 }
@@ -363,11 +376,30 @@ a.about:hover {
 }
 
 #helpSubmit {
+  font-family: "Exo", sans-serif;
+
   text-align: center;
+}
+
+#step1 {
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  color: rgb(230, 140, 0);
+}
+#step2 {
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  color: rgb(230, 140, 0);
+}
+#step3 {
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  color: rgb(230, 140, 0);
 }
 
 /* Testimonials */
 #testimonials-title {
+  font-family: "Bowlby One SC", cursive;
   text-align: center;
   color: rgb(88, 168, 201);
   text-align: center;

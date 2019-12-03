@@ -145,11 +145,15 @@ class Help extends React.Component {
         </Navbar>
         <br />
         <Container>
-          <h1 id="help-title">Help Me, Help You, Help Someone</h1>
+          <h1 id="help-title">Help Me Help You</h1>
           <br />
           <Form>
             <Form.Group>
-              <h2 id="theirEmail">Their Email Address</h2>
+              <h2 id="theirEmail">Step 1: Their Email Address</h2>
+              <h5 id="step1">
+                Enter the email of the person you would like to send your
+                concern to.
+              </h5>
               <Form.Control
                 type="email"
                 placeholder="tomcruise@cruisin.com"
@@ -158,7 +162,12 @@ class Help extends React.Component {
               />
             </Form.Group>
             <Form.Group>
-              <h2 id="theirEmail">Tone</h2>
+              <h2 id="theirEmail">Step 2: Tone</h2>
+              <h5 id="step2">
+                Pick how you would like to sound in the email. Blunt would be
+                more direct and to the point, whereas apologetic would be
+                easier.
+              </h5>
               <ButtonToolbar>
                 <ToggleButtonGroup
                   type="radio"
@@ -166,12 +175,14 @@ class Help extends React.Component {
                   defaultValue={this.state.selectedTone}
                 >
                   <ToggleButton
+                    id="bluntButton"
                     value={"blunt"}
                     onClick={() => this.setState({ selectedTone: "blunt" })}
                   >
                     Blunt
                   </ToggleButton>
                   <ToggleButton
+                    id="apologeticButton"
                     value={"apologetic"}
                     onClick={() =>
                       this.setState({ selectedTone: "apologetic" })
@@ -183,7 +194,10 @@ class Help extends React.Component {
               </ButtonToolbar>
             </Form.Group>
             <Form.Group>
-              <h2 id="templateReasons">Reasons</h2>
+              <h2 id="templateReasons">Step 3: Reasons</h2>
+              <h5 id="step3">
+                Choose the reason why you are sending the email
+              </h5>
               <br />
               <Row>
                 <Col id="issue-col">{this.state.uiIssues}</Col>
