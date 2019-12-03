@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 html,
@@ -335,15 +335,28 @@ a.about:hover {
   text-align: center;
 }
 
+#toneButtons {
+  text-align: center;
+}
+
 #bluntButton,
 #apologeticButton {
   font-family: "Exo", sans-serif;
-  background: rgb(130, 182, 71);
-  border: rgb(130, 182, 71);
+  background: rgb(37, 40, 45);
+  border: 2px solid rgb(130, 182, 71);
+  text-align: center;
 }
-
-#bluntButton {
-  border-right: 5px solid rgb(37, 40, 45);
+#bluntButton.selected {
+  background-color: rgb(130, 182, 71);
+}
+#bluntButton:hover {
+  background: rgb(130, 182, 71);
+}
+#apologeticButton.selected {
+  background-color: rgb(130, 182, 71);
+}
+#apologeticButton:hover {
+  background: rgb(130, 182, 71);
 }
 
 #email,
@@ -384,17 +397,17 @@ a.about:hover {
 #step1 {
   font-family: "Exo", sans-serif;
   text-align: center;
-  color: rgb(230, 140, 0);
+  color: rgb(195, 103, 106);
 }
 #step2 {
   font-family: "Exo", sans-serif;
   text-align: center;
-  color: rgb(230, 140, 0);
+  color: rgb(195, 103, 106);
 }
 #step3 {
   font-family: "Exo", sans-serif;
   text-align: center;
-  color: rgb(230, 140, 0);
+  color: rgb(195, 103, 106);
 }
 
 /* Testimonials */
