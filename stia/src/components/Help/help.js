@@ -168,30 +168,32 @@ class Help extends React.Component {
                 more direct and to the point, whereas apologetic would be
                 easier.
               </h5>
-              <ButtonToolbar id="toneButtons">
-                <ToggleButtonGroup
-                  type="radio"
-                  name="options"
-                  defaultValue={this.state.selectedTone}
-                >
-                  <ToggleButton
-                    id="bluntButton"
-                    value={"blunt"}
-                    onClick={() => this.setState({ selectedTone: "blunt" })}
+              <Row id="toneButtons">
+                <ButtonToolbar>
+                  <ToggleButtonGroup
+                    type="radio"
+                    name="options"
+                    defaultValue={this.state.selectedTone}
                   >
-                    Blunt
-                  </ToggleButton>
-                  <ToggleButton
-                    id="apologeticButton"
-                    value={"apologetic"}
-                    onClick={() =>
-                      this.setState({ selectedTone: "apologetic" })
-                    }
-                  >
-                    Apologetic
-                  </ToggleButton>
-                </ToggleButtonGroup>
-              </ButtonToolbar>
+                    <ToggleButton
+                      id="bluntButton"
+                      value={"blunt"}
+                      onClick={() => this.setState({ selectedTone: "blunt" })}
+                    >
+                      Blunt
+                    </ToggleButton>
+                    <ToggleButton
+                      id="apologeticButton"
+                      value={"apologetic"}
+                      onClick={() =>
+                        this.setState({ selectedTone: "apologetic" })
+                      }
+                    >
+                      Apologetic
+                    </ToggleButton>
+                  </ToggleButtonGroup>
+                </ButtonToolbar>
+              </Row>
             </Form.Group>
             <Form.Group>
               <h2 id="templateReasons">Step 3: Reasons</h2>

@@ -336,7 +336,8 @@ a.about:hover {
 }
 
 #toneButtons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 #bluntButton,
