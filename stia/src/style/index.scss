@@ -185,20 +185,6 @@ body,
   background-color: $whiteish;
 }
 
-.help,
-.login,
-.testimonials,
-.about {
-  // height: 100%;
-  // width: 100%;
-  // border-radius: 0px;
-}
-
-#logo-image {
-  max-width: 100%;
-  height: 100%;
-}
-
 span#blue {
   color: white;
   background-color: rgb(88, 168, 201);
@@ -255,6 +241,7 @@ a.submitSignUp:hover {
   font-family: "Bowlby One SC", cursive;
   background-color: rgb(37, 40, 45);
   border: rgb(37, 40, 45);
+  display: block;
 }
 
 .help {
@@ -263,6 +250,14 @@ a.submitSignUp:hover {
   color: white;
   text-align: center;
   font-size: 3em;
+  transition: 0.2s;
+}
+a.help:hover {
+  color: rgb(88, 168, 201);
+  background: $darkgray;
+}
+*:focus {
+  outline: none;
 }
 
 .login {
@@ -286,10 +281,6 @@ a.submitSignUp:hover {
   font-size: 3em;
 }
 
-a.help:hover {
-  color: rgb(88, 168, 201);
-  background: linear-gradient(0deg, rgb(37, 40, 45) 0%, rgb(37, 40, 45) 100%);
-}
 a.login:hover {
   color: rgb(230, 140, 0);
   background: linear-gradient(0deg, rgb(37, 40, 45) 0%, rgb(37, 40, 45) 100%);
