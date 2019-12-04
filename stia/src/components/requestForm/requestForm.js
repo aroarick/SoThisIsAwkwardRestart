@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 // import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
+// import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 
 class FormPage extends React.Component {
@@ -38,15 +38,12 @@ class FormPage extends React.Component {
           </h2>
           <Form>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Example textarea</Form.Label>
               <Form.Control as="textarea" rows="3" />
             </Form.Group>
           </Form>
-          <Row>
-            <Button className="btn btn-custom" href="/signUp">
-              Submit
-            </Button>
-          </Row>
+          <Button className="btn btn-custom" href="/signUp">
+            Submit
+          </Button>
         </Container>
       </>
     );

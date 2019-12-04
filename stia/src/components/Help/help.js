@@ -191,12 +191,7 @@ class Help extends React.Component {
               </Row>
             </Form.Group>
           </Form>
-          <Button
-            id="helpSubmit"
-            className="btn-custom"
-            variant="primary"
-            onClick={this.submit}
-          >
+          <Button href="#" className="btn btn-custom" onClick={this.submit}>
             Submit
           </Button>
         </Container>
