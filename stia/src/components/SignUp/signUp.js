@@ -9,12 +9,15 @@ import { Redirect } from "react-router-dom";
 const axios = require("axios");
 
 class SignUp extends React.Component {
-  state = {
-    username: "",
-    password: "",
-    password2: "",
-    loggedIn: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: "",
+      password: "",
+      password2: "",
+      loggedIn: false
+    };
+  }
 
   handleUsernameInputChange = e => {
     this.setState({ username: e.target.value });
@@ -35,11 +38,14 @@ class SignUp extends React.Component {
         newUser.username = this.state.username;
         newUser.password = this.state.password;
 
+        axios.defaults.withCredentials = true;
         axios
           .post("http://localhost:3001/api/v1/login", JSON.stringify(newUser), {
             headers: { "Content-Type": "application/json" }
           })
-          .then(function(response) {})
+          .then(function(response) {
+            console.log(response);
+          })
           .catch(function(error) {
             console.log(error);
           });

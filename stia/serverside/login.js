@@ -19,6 +19,8 @@ module.exports = {
         if (err) {
           response.json({ response: "bad", error: err });
         } else {
+          request.session.loggedIn = true;
+          request.session.userId = result.insertId;
           response.json({ response: "good", result: result, loggedIn: true });
         }
       });
@@ -27,7 +29,6 @@ module.exports = {
   getLogin: function(request, response) {
     require("./db.js")();
     var con = connection();
-    // console.log(request.session.name);
     con.connect(function(err) {
       if (err) throw err;
       // get data

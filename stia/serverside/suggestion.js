@@ -8,7 +8,7 @@ module.exports = {
 
       if (request.session.loggedIn) {
         let userid = request.session.userId;
-        let suggestion = request.body.suggestion;
+        let suggestion = request.body.issue;
         let category = request.body.category;
 
         // get data
