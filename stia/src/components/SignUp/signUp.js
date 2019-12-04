@@ -4,13 +4,16 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { Redirect } from "react-router-dom";
+
 const axios = require("axios");
 
 class SignUp extends React.Component {
   state = {
     username: "",
     password: "",
-    password2: ""
+    password2: "",
+    loggedIn: false
   };
 
   handleUsernameInputChange = e => {
@@ -36,19 +39,25 @@ class SignUp extends React.Component {
           .post("http://localhost:3001/api/v1/login", JSON.stringify(newUser), {
             headers: { "Content-Type": "application/json" }
           })
-          .then(function(response) {
-            console.log(response);
-          })
+          .then(function(response) {})
           .catch(function(error) {
             console.log(error);
           });
+        this.setState({ loggedIn: true });
       }
+    }
+  };
+
+  renderRedirect = () => {
+    if (this.state.loggedIn) {
+      return <Redirect to="/requestForm" />;
     }
   };
 
   render() {
     return (
       <>
+        {this.renderRedirect()}
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="/">
             <span id="blue">So</span> <span id="orange">This</span>{" "}
@@ -99,10 +108,8 @@ class SignUp extends React.Component {
             </Form.Group>
             <Button
               className="btn btn-custom submitSignUp"
-              href="/requestForm"
               onClick={this.handleFormSubmit}
               variant="primary"
-              type="submit"
             >
               Submit
             </Button>

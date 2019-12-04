@@ -19,7 +19,7 @@ module.exports = {
         if (err) {
           response.json({ response: "bad", error: err });
         } else {
-          response.json({ response: "good", result: result });
+          response.json({ response: "good", result: result, loggedIn: true });
         }
       });
     });
