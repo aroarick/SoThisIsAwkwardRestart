@@ -4,39 +4,44 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import API from "../utils/API";
+const axios = require("axios");
 
 class SignUp extends React.Component {
   state = {
     username: "",
-    email: "",
     password: "",
     password2: ""
   };
 
-  handleInputChange = event => {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
+  handleUsernameInputChange = e => {
+    this.setState({ username: e.target.value });
+  };
+
+  handlePasswordInputChange = e => {
+    this.setState({ password: e.target.value });
+  };
+
+  handlePassword2InputChange = e => {
+    this.setState({ password2: e.target.value });
   };
 
   handleFormSubmit = event => {
-    event.preventDefault();
-    if (
-      this.state.password &&
-      this.state.password2 &&
-      this.state.username &&
-      this.state.email
-    ) {
+    if (this.state.password && this.state.password2 && this.state.username) {
       if (this.state.password === this.state.password2) {
-        API.signUp({
-          username: this.state.username,
-          email: this.state.email,
-          password: this.state.password
-        })
-          .then(res => console.log(res))
-          .catch(err => console.log(err));
+        let newUser = {};
+        newUser.username = this.state.username;
+        newUser.password = this.state.password;
+
+        axios
+          .post("http://localhost:3001/api/v1/login", JSON.stringify(newUser), {
+            headers: { "Content-Type": "application/json" }
+          })
+          .then(function(response) {
+            console.log(response);
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
       }
     }
   };
@@ -66,30 +71,17 @@ class SignUp extends React.Component {
               <Form.Label>Username</Form.Label>
               <Form.Control
                 value={this.state.username}
-                onChange={this.handleInputChange}
+                onChange={this.handleUsernameInputChange}
                 name="username"
                 type="input"
                 placeholder="Enter Username"
               />
             </Form.Group>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                value={this.state.email}
-                onChange={this.handleInputChange}
-                name="email"
-                type="input"
-                placeholder="Enter email"
-              />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
                 value={this.state.password}
-                onChange={this.handleInputChange}
+                onChange={this.handlePasswordInputChange}
                 name="password"
                 type="password"
                 placeholder="Password"
@@ -99,7 +91,7 @@ class SignUp extends React.Component {
               <Form.Label>Confirm Password</Form.Label>
               <Form.Control
                 value={this.state.password2}
-                onChange={this.handleInputChange}
+                onChange={this.handlePassword2InputChange}
                 name="password2"
                 type="password"
                 placeholder="Password"

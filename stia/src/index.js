@@ -8,7 +8,7 @@ import Help from "./components/Help/help";
 import Request from "./components/requestReason/requestReason";
 import FormPage from "./components/requestForm/requestForm";
 import Login from "./components/Login/login";
-import SignUp from "./components/SignUo/signUp";
+import SignUp from "./components/SignUp/signUp";
 import signedIn from "./components/signedIn/signedIn";
 import Testimonials from "./components/testimonials/testimonials";
 import About from "./components/About/about";
