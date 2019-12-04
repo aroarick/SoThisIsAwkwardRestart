@@ -313,15 +313,14 @@ a.about:hover {
   text-align: center;
 }
 
-#FAQ-1-Q,
-#FAQ-2-Q {
+.qa-question {
   color: white;
   text-align: left;
 }
-#FAQ-1-A,
-#FAQ-2-A {
+.qa-answer {
   color: rgb(230, 140, 0);
-  text-align: right;
+  text-align: left;
+  padding-left: 1em;
 }
 
 /* Help page */

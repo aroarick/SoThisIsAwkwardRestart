@@ -30,21 +30,21 @@ class Testimonials extends React.Component {
         <br />
         <h1 id="testimonials-title">Testimonials</h1>
         <Container>
-          <h2 id="exampleName">Jennifer said:</h2>
-          <h4 id="exampleText">
+          <h3 className="qa-question">Jennifer said:</h3>
+          <p className="qa-answer">
             "So This Is Awkward" saved my marriage! My husband has bad breath
             and it was interfering with our relationship. By sending an
             anonymous message, I was able to communicate this sensitive problem.
             Everything is better now!
-          </h4>
-          <h2 id="exampleName">Anonymous said:</h2>
-          <h4 id="exampleText">
+          </p>
+          <h3 className="qa-question">Anonymous said:</h3>
+          <p className="qa-answer">
             One of my co-workers tends to smoke during work. I usually don't
             mind, but lately, the smell has been giving me a headache:
             distratcing me from my duties. I was able to send an email from "So
             This Is Awkward" to them and now they are more concienious of the
             smell. Thank you!
-          </h4>
+          </p>
         </Container>
       </>
     );
