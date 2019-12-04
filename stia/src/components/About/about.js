@@ -21,7 +21,7 @@ class Testimonials extends React.Component {
             <Nav.Link href="/help">Help Me, Help You, Help Someone</Nav.Link>
             <Nav.Link href="/testimonials">Testimonials</Nav.Link>
             <Nav.Link href="/about">FAQ</Nav.Link>
-            <Nav.Link href="/login">Login or SignUp</Nav.Link>
+            <Nav.Link href="/requestReason">Request A Reason</Nav.Link>
           </Nav>
         </Navbar>
 

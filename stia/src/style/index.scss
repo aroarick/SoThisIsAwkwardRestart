@@ -20,6 +20,7 @@ h1 {
 html,
 body,
 #root {
+  font-family: "Exo", sans-serif;
   height: 100%;
 }
 
@@ -224,6 +225,9 @@ span#pink {
 .btn-custom {
   background-color: rgb(195, 103, 106);
   border: rgb(195, 103, 106);
+  // display: flex;
+  justify-content: center;
+  display: block;
 }
 a.loginSubmit:hover,
 a.signUpPls:hover,
@@ -233,9 +237,10 @@ a.submitSignUp:hover {
 }
 
 /* Home */
-#title {
+#logo-image {
   height: 100%;
 }
+
 .btn-home-custom {
   text-align: left;
   font-family: "Bowlby One SC", cursive;
@@ -422,4 +427,15 @@ a.about:hover {
 
 #testimonial-submit {
   color: rgb(130, 182, 71);
+}
+
+// Request A Reason
+#directions {
+  color: rgb(230, 140, 0);
+  text-align: center;
+}
+
+#promo {
+  color: rgb(130, 182, 71);
+  text-align: center;
 }

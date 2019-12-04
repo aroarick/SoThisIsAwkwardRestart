@@ -19,4 +19,5 @@ app.post("/api/v1/message", (req, res) => {
 
 app.listen(process.env.PORT || port, () => {
   console.log("server is listening on port " + port);
+  // console.log(key);
 });

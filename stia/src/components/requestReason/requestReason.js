@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 // import Form from "react-bootstrap/Form";
-// import Button from "react-bootstrap/Button";
+import Button from "react-bootstrap/Button";
+// import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 
-class Testimonials extends React.Component {
+class Request extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -28,26 +29,23 @@ class Testimonials extends React.Component {
         </Navbar>
 
         <br />
-        <h1 id="testimonials-title">Testimonials</h1>
+        <h1 id="testimonials-title">Request A Reason</h1>
         <Container>
-          <h2 id="exampleName">Jennifer said:</h2>
-          <h4 id="exampleText">
-            "So This Is Awkward" saved my marriage! My husband has bad breath
-            and it was interfering with our relationship. By sending an
-            anonymous message, I was able to communicate this sensitive problem.
-            Everything is better now!
-          </h4>
-          <h2 id="exampleName">Anonymous said:</h2>
-          <h4 id="exampleText">
-            One of my co-workers tends to smoke during work. I usually don't
-            mind, but lately, the smell has been giving me a headache:
-            distratcing me from my duties. I was able to send an email from "So
-            This Is Awkward" to them and now they are more concienious of the
-            smell. Thank you!
-          </h4>
+          <h2 id="directions">
+            Would you like to assist in making the reasons for why people send
+            an anonymous email? We can't come up with all the reasons by our
+            selves!
+          </h2>
+          <h3 id="promo">
+            If you are interested in becoming a part of our process, sign up
+            here
+          </h3>
+          <Button className="btn btn-custom" href="/signUp">
+            Sign Up
+          </Button>
         </Container>
       </>
     );
   }
 }
-export default Testimonials;
+export default Request;

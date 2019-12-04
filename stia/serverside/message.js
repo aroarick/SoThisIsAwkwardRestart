@@ -20,6 +20,7 @@ module.exports = {
       })
       .catch(function(error) {
         response.json({ response: "bad", error: error });
+        console.log(key);
       });
   }
 };

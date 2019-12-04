@@ -98,21 +98,6 @@ class Help extends React.Component {
     } else {
       alert("selected something you hoser");
     }
-
-    // axios
-    //   .post("http://localhost:5000/api/v1/message", {
-    //     // emailAddress: "ahorseroar@gmail.com",
-    //     // htmlMessage: "<h1>I am sending this from stia...kinda...sorta</h1>",
-    //     // subject: "so this is awkward",
-    //     // textMessage: "Sup"
-    //     emailAddres: "sendeeEmail"
-    //   })
-    //   .then(function(response) {
-    //     console.log(response);
-    //   })
-    //   .catch(function(error) {
-    //     console.log(error);
-    //   });
   };
 
   setTone(w) {
@@ -140,7 +125,7 @@ class Help extends React.Component {
             <Nav.Link href="/help">Help Me, Help You, Help Someone</Nav.Link>
             <Nav.Link href="/testimonials">Testimonials</Nav.Link>
             <Nav.Link href="/about">FAQ</Nav.Link>
-            <Nav.Link href="/login">Login or SignUp</Nav.Link>
+            <Nav.Link href="/requestReason">Request A Reason</Nav.Link>
           </Nav>
         </Navbar>
         <br />
