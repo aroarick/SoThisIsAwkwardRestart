@@ -12,7 +12,7 @@ class Home extends React.Component {
   render() {
     return (
       <Row>
-        <Col md={6}>
+        <Col md={6} className="image-holder">
           <Image id="logo-image" src="images/logo-dark-cropped.PNG" fluid />
         </Col>
         <Col md={6}>
