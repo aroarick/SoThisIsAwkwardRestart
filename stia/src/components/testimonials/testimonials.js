@@ -30,14 +30,20 @@ class Testimonials extends React.Component {
         <br />
         <h1 id="testimonials-title">Testimonials</h1>
         <Container>
-          <h3 className="qa-question">Jennifer said:</h3>
+          <h3 className="qa-question">Jennifer</h3>
           <p className="qa-answer">
             "So This Is Awkward" saved my marriage! My husband has bad breath
             and it was interfering with our relationship. By sending an
             anonymous message, I was able to communicate this sensitive problem.
             Everything is better now!
           </p>
-          <h3 className="qa-question">Anonymous said:</h3>
+          <h3 className="qa-question">Sandy</h3>
+          <p className="qa-answer">
+            OH LAWD! you saved me, my sons feet were straight up murderin' my
+            nose holes. Now he thinks persons besides me think he stank. Maybe
+            now he will start washin' every day.
+          </p>
+          <h3 className="qa-question">Anonymous</h3>
           <p className="qa-answer">
             One of my co-workers tends to smoke during work. I usually don't
             mind, but lately, the smell has been giving me a headache:
