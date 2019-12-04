@@ -27,14 +27,14 @@ module.exports = {
   getLogin: function(request, response) {
     require("./db.js")();
     var con = connection();
-
+    // console.log(request.session.name);
     con.connect(function(err) {
       if (err) throw err;
       // get data
       let username = request.body.username;
       let password = request.body.password;
       var sql =
-        "SELECT COUNT(*) as count FROM users WHERE username='" +
+        "SELECT id_user FROM users WHERE username='" +
         username +
         "' AND password='" +
         password +
@@ -44,6 +44,13 @@ module.exports = {
         if (err) {
           response.json({ response: "bad", error: err });
         } else {
+          if (result.length === 0) {
+            request.session.loggedIn = false;
+            request.session.userId = null;
+          } else {
+            request.session.loggedIn = true;
+            request.session.userId = result[0].id_user;
+          }
           response.json({ response: "good", result: result });
         }
       });
