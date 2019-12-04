@@ -32,14 +32,10 @@ class Request extends React.Component {
         <h1 id="testimonials-title">Request A Reason</h1>
         <Container>
           <h2 id="directions">
-            Would you like to assist in making the reasons for why people send
-            an anonymous email? We can't come up with all the reasons by our
-            selves!
+            Do we not have the issue that you would like to address? If so, sign
+            up here and be a part of So This Is Awkward! We can't come up with
+            all the reasons by ourselves!
           </h2>
-          <h3 id="promo">
-            If you are interested in becoming a part of our process, sign up
-            here
-          </h3>
           <Button className="btn btn-custom" href="/signUp">
             Sign Up
           </Button>

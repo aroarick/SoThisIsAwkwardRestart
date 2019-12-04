@@ -194,6 +194,7 @@ class Help extends React.Component {
           <Button href="#" className="btn btn-custom" onClick={this.submit}>
             Submit
           </Button>
+          <br />
         </Container>
       </>
     );
