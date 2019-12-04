@@ -336,24 +336,15 @@ a.about:hover {
   justify-content: center;
 }
 
-#bluntButton,
-#apologeticButton {
+#toneButtons label.btn {
   font-family: "Exo", sans-serif;
   background: rgb(37, 40, 45);
   border: 2px solid rgb(130, 182, 71);
   text-align: center;
 }
-#bluntButton.selected {
+// .btn-group-toggle
+#toneButtons label.active {
   background-color: rgb(130, 182, 71);
-}
-#bluntButton:hover {
-  background: rgb(130, 182, 71);
-}
-#apologeticButton.selected {
-  background-color: rgb(130, 182, 71);
-}
-#apologeticButton:hover {
-  background: rgb(130, 182, 71);
 }
 
 #email,
