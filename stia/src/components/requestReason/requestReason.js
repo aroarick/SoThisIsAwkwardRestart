@@ -43,6 +43,10 @@ class Request extends React.Component {
           <Button className="btn btn-custom" href="/signUp">
             Sign Up
           </Button>
+          <br />
+          <Button className="btn btn-custom" href="/login">
+            Login
+          </Button>
         </Container>
       </>
     );

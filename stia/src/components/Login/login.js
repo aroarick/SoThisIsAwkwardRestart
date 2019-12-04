@@ -4,37 +4,75 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import API from "../utils/API";
+import Alert from "react-bootstrap/Alert";
+import { Redirect } from "react-router-dom";
+
+const axios = require("axios");
 
 class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      allGood: false,
+      message: null
     };
   }
+  handleUsernameInputChange = e => {
+    this.setState({ username: e.target.value });
+  };
 
-  handleInputChange = event => {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
+  handlePasswordInputChange = e => {
+    this.setState({ password: e.target.value });
   };
 
   handleFormSubmit = event => {
-    event.preventDefault();
+    if (this.state.password && this.state.username) {
+      let login = {};
+      login.username = this.state.username;
+      login.password = this.state.password;
 
-    API.login({
-      email: this.state.email,
-      password: this.state.password
-    })
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+      var self = this;
+      axios.defaults.withCredentials = true;
+      axios
+        .post(
+          "http://localhost:3001/api/v1/loginCheck",
+          JSON.stringify(login),
+          {
+            headers: { "Content-Type": "application/json" }
+          }
+        )
+        .then(function(response) {
+          console.log(response);
+          if (response.data.result === null) {
+            self.setState({ message: "Try Again, bad password or username" });
+          } else {
+            self.setState({ allGood: true });
+          }
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    }
   };
+
+  renderRedirect = () => {
+    if (this.state.allGood) {
+      return <Redirect to="/requestForm" />;
+    }
+  };
+
+  renderMessage = () => {
+    if (this.state.message != null) {
+      return <Alert variant="danger">{this.state.message}</Alert>;
+    }
+  };
+
   render() {
     return (
       <>
+        {this.renderRedirect()}
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="/">
             <span id="blue">So</span> <span id="orange">This</span>{" "}
@@ -52,48 +90,34 @@ class Login extends React.Component {
         <Container>
           <h1 id="login-title">Login</h1>
           <br />
+          {this.renderMessage()}
           <Form>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+            <Form.Group controlId="username">
+              <Form.Label>Username</Form.Label>
               <Form.Control
-                value={this.state.email}
-                onChange={this.handleInputChange}
-                name="email"
+                value={this.state.username}
+                onChange={this.handleUsernameInputChange}
                 type="input"
-                placeholder="Enter email"
+                placeholder="Username"
               />
-              <Form.Text className="text-muted" id="texted-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
             </Form.Group>
-            <Form.Group controlId="formBasicPassword">
+            <Form.Group controlId="password">
               <Form.Label>Password</Form.Label>
               <Form.Control
                 value={this.state.password}
-                onChange={this.handleInputChange}
-                name="password"
+                onChange={this.handlePasswordInputChange}
                 type="password"
                 placeholder="Password"
               />
             </Form.Group>
             <Button
               className="btn btn-custom loginSubmit"
-              href="/help"
+              onClick={this.handleFormSubmit}
               variant="primary"
-              type="submit"
             >
               Submit
             </Button>
           </Form>
-          <br />
-          <h5 id="account-promo">Don't have an account?</h5>
-          <Button
-            className="btn btn-custom signUpPls"
-            variant="primary"
-            type="submit"
-          >
-            Sign Up
-          </Button>
         </Container>
       </>
     );

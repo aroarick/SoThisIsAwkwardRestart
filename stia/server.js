@@ -38,8 +38,8 @@ app.post("/api/v1/login", (req, res) => {
 });
 
 // do login
-app.get("/api/v1/login", (req, res) => {
-  login.getLogin(req, res);
+app.post("/api/v1/loginCheck", (req, res) => {
+  login.postLoginCheck(req, res);
 });
 
 // do logout

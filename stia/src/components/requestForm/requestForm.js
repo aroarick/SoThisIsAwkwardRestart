@@ -32,7 +32,6 @@ class FormPage extends React.Component {
     suggestion.category = this.state.category;
 
     let self = this;
-
     axios.defaults.withCredentials = true;
     axios
       .post(
