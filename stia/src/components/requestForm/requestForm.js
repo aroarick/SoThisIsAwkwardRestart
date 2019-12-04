@@ -4,19 +4,19 @@ import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import { Redirect } from "react-router-dom";
 
 const axios = require("axios");
 
 class FormPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      issue: "",
+      category: "",
+      allGood: false
+    };
   }
-
-  state = {
-    issue: "",
-    category: ""
-  };
 
   handleIssueInputChange = e => {
     this.setState({ issue: e.target.value });
@@ -31,6 +31,8 @@ class FormPage extends React.Component {
     suggestion.issue = this.state.issue;
     suggestion.category = this.state.category;
 
+    let self = this;
+
     axios.defaults.withCredentials = true;
     axios
       .post(
@@ -41,16 +43,23 @@ class FormPage extends React.Component {
         }
       )
       .then(function(response) {
-        console.log(response);
+        self.setState({ allGood: true });
       })
       .catch(function(error) {
         console.log(error);
       });
   };
 
+  renderRedirect = () => {
+    if (this.state.allGood) {
+      return <Redirect to="/requestReason" />;
+    }
+  };
+
   render() {
     return (
       <>
+        {this.renderRedirect()}
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="/">
             <span id="blue">So</span> <span id="orange">This</span>{" "}
