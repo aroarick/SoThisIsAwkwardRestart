@@ -9,6 +9,7 @@ module.exports = {
       to: request.body.emailAddress,
       from: "noreply@sothisisawkward.com",
       subject: request.body.subject,
+      // firstThing: request.body.firstThing,
       text: request.body.textMessage,
       html: request.body.htmlMessage
     };

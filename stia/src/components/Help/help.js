@@ -62,6 +62,7 @@ class Help extends React.Component {
     let selectedIssue = this.state.selectedIssue;
     let selectedTone = this.state.selectedTone;
     let emailAddress = this.state.emailAddress;
+    // let firstThing = this.state.firstThing;
     let data = this.state.data;
     let issueObject = null;
 
@@ -71,6 +72,7 @@ class Help extends React.Component {
         let issue = category.issues[iss];
         if (issue.text === selectedIssue) {
           issueObject = issue;
+          window.location.reload();
         }
       }
     }
@@ -79,6 +81,7 @@ class Help extends React.Component {
     let emailPackage = {};
     if (issueObject) {
       emailPackage.emailAddress = emailAddress;
+      // emailPackage.firstThing = issueObject.firstThing;
       emailPackage.htmlMessage = issueObject.messageTone[selectedTone].html;
       emailPackage.textMessage = issueObject.messageTone[selectedTone].text;
       emailPackage.subject = issueObject.subject;
@@ -96,7 +99,7 @@ class Help extends React.Component {
           console.log(error);
         });
     } else {
-      alert("selected something you hoser");
+      alert("select something you hoser");
     }
   };
 

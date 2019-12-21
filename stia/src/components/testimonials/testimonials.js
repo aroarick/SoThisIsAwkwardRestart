@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-// import Form from "react-bootstrap/Form";
-// import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 
 class Testimonials extends React.Component {
@@ -51,6 +51,31 @@ class Testimonials extends React.Component {
             This Is Awkward" to them and now they are more concienious of the
             smell. Thank you!
           </p>
+
+          {/* <Form className="submitTestimonial">
+            <h3 id="submit-testimonial-header">
+              Submit your experience with So This Is Awkward Here
+            </h3>
+            <Form.Group>
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="text" placeholder="Enter name" />
+              <Form.Text className="text-muted">
+                You don't have to use your real name.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Label>Testimonial</Form.Label>
+              <Form.Control rows="3" as="textArea" />
+            </Form.Group>
+            <Button
+              type="submit"
+              className="btn btn-custom"
+              onClick={this.handleFormSubmit}
+            >
+              Submit
+            </Button>
+          </Form> */}
         </Container>
       </>
     );

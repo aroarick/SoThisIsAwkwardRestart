@@ -7,69 +7,61 @@
           "text": "Stinky Breath",
           "description": "The person that this is being sent to has stinky breath",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>The person who sent this doesn't want to seem out of line, but they think your breath kinda stinks</h1>",
+              "html": "<h3>The person who sent this doesn't want to seem out of line, but they think your breath kinda stinks</h3><h4>Some suggestions that may help:</h4><ul><li>Please brush your teeth</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "Somebody has taken issue with something having to do with you\n\nThe person who sent this doesn't want to seem out of line, but they think your breath kinda stinks"
             },
             "blunt": {
-              "html": "<h1>The person who sent this thinks breath stinks</h1>",
-              "text": "The person who sent this thinks breath stinks"
+              "html": "<h3>The person who sent this thinks your breath stinks</h3><h4>Some suggestions that may help:</h4><ul><li>Brush your dang teeth</li><li>Close your mouth</li><li>Or just don't speak</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
+              "text": "Somebody has taken issue with something having to do with you. The person who sent this thinks breath stinks."
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         },
         {
           "text": "Smell Like Smoke",
           "description": "The person you are sending this to smells like smoke",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>Someone is sorry to tell you this, but they think you have a very strong smokey smell.</h1>",
+              "html": "<h3>Someone is sorry to tell you this, but they think you have a very strong smokey smell.</h3><h4>Some suggestions that may help:</h4><ul><li>Please put on some perfume</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "Someone is sorry to tell you this, but they think you have a very strong smokey smell."
             },
             "blunt": {
-              "html": "<h1>Someone thinks you smell like cigarette smoke</h1>",
+              "html": "<h1>Someone thinks you smell like cigarette smoke</h1><h4>Some suggestions that may help:</h4><ul><li>Put some good perfume on</li><li>Smoke in your off time</li><li>Just stop</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "Someone thinks you smell like cigarette smoke"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         },
         {
           "text": "Body Odour",
           "description": "The person you are sending this to has really bad BO",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>I hope this is helpful, but the person who sent you this thinks you have some body odour</h1>",
+              "html": "<h3>I hope this is helpful, but the person who sent you this thinks you have some body odour</h3><h4>Some suggestions that may help:</h4><ul><li>Please put on some deodorant</li><li>Or maybe shower</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "I hope this is helpful, but the person who sent you this thinks you have some body odour"
             },
             "blunt": {
-              "html": "<h1>Someone thinks you stink, like BO stink</h1>",
+              "html": "<h3>Someone thinks you stink, like BO stink</h3><h4>Some suggestions that may help:</h4><ul><li>Deodorant. Use it</li><li>Houses have showers for a reason</li><li>Or if nothing else, spritz some perfume. Please</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "Someone thinks you stink, like BO stink"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         },
         {
           "text": "Food In Teeth",
           "description": "The person this is being sent to has food in their teeth",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>I hope this is helpful, someone noticed you seem to have food in your teeth</h1>",
+              "html": "<h3>I hope this is helpful, someone noticed you seem to have food in your teeth</h3><h4>Some suggestions that may help:</h4><ul><li>Please go check in the mirror</li><li>Or maybe brush your teeth</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "I hope this is helpful, someone noticed you seem to have food in your teeth"
             },
             "blunt": {
-              "html": "<h1>Someone noticed you have food in your teeth</h1>",
+              "html": "<h3>Someone noticed you have food in your teeth</h3><h4>Some suggestions that may help:</h4><ul><li>Go look in the mirror</li><li>Use a dang toothpick</li><li>Take a second and go swish some water</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "Someone noticed you have food in your teeth"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         }
       ]
     },
@@ -80,69 +72,61 @@
           "text": "Loud Inside Voice",
           "description": "The person that this is being sent to talks very loudly",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>The person who sent this doesnt't want to seem out of line, but they think you talk too loud</h1>",
+              "html": "<h3>The person who sent this doesnt't want to seem out of line, but they think you talk too loud</h3><h4>Some suggestions that may help:</h4><ul><li>Please be conscious of your voice level</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "The person who sent this doesnt't want to seem out of line, but they think you talk too loud"
             },
             "blunt": {
-              "html": "<h1>The person who sent this thinks you need to take your inside voice down 5 notches</h1>",
+              "html": "<h3>The person who sent this thinks you need to take your inside voice down 5 notches</h3><h4>Some suggestions that may help:</h4><ul><li>Talk quieter</li><li>Shush</li><li>Talk from a further distance away</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "The person who sesnt this thinks you need to take your inside voice down 5 notches"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         },
         {
           "text": "Close Talker",
           "description": "The person you are sending this to talks very closely",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>The person who sent this doesn't want to seem rude, but they think you talk very close to people, and it makes them uncomfortable</h1>",
+              "html": "<h3>The person who sent this doesn't want to seem rude, but they think you talk very close to people, and it makes them uncomfortable</h3><h4>Some suggestions that may help:</h4><ul><li>Please don't talk so close to people</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "The person who sent this doesn't want to seem rude, but they think you talk very close to people, and it makes them uncomfortable"
             },
             "blunt": {
-              "html": "<h1>The person who sent this says, 'You break my personal bubble when you talk to me'</h1>",
+              "html": "<h3>The person who sent this says, 'You break my personal bubble when you talk to me'</h3><h4>Some suggestions that may help:</h4><ul><li>Back up</li><li>Make your own personal bubble so you don't break someone else's</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "The person who sent this says, 'You break my personal bubble when you talk to me'"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         },
         {
           "text": "Big Smacker",
           "description": "The person you are sending this to smacks their lips",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>I hope this is helpful, but someone thinks you smack your lips when you eat</h1>",
+              "html": "<h3>I hope this is helpful, but someone thinks you smack your lips when you eat</h3><h4>Some suggestions that may help:</h4><ul><li>Please close your mouth when you chew</li><li>Or breathe through your nose</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "I hope this is helpful, but someone thinks you smack your lips when you eat"
             },
             "blunt": {
-              "html": "<h1>The person who sent this thinks you need to stop smacking</h1>",
+              "html": "<h3>The person who sent this thinks you need to stop smacking</h3><h4>Some suggestions that may help:</h4><ul><li>Close your mouth</li><li>Breathe through your nose</li><li>Eat away from people</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "The person who sent this thinks you need to stop smacking"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         },
         {
           "text": "Talk Too Much",
           "description": "The person you are sending this to talks too much",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>I don't mean to sound rude, but a concerned third part can't focus on what they need to do because you talk too much.</h1>",
+              "html": "<h3>I don't mean to sound rude, but a concerned third part can't focus on what they need to do because you talk too much.</h3><h4>Some suggestions that may help:</h4><ul><li>Please don't talk so much</li><li>Read the situation</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "I don't mean to sound rude, but a concerned third part can't focus on what they need to do because you talk too much."
             },
             "blunt": {
-              "html": "<h1>A concerned third party thinks you talk to much</h1>",
+              "html": "<h3>A concerned third party thinks you talk to much</h3><h4>Some suggestions that may help:</h4><ul><li>Know that you are talking too much</li><li>Don't talk</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "A concerned third party thinks you talk to much"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         }
       ]
     },
@@ -153,52 +137,46 @@
           "text": "Not Doing Their Part",
           "description": "The person that this is being sent to is not doing their part on a project, homework, etc",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>I don't want to make a big deal, but the person who sent you this thinks you are not doing as much as you should for their group</h1>",
+              "html": "<h3>I don't want to make a big deal, but the person who sent you this thinks you are not doing as much as you should for their group</h3><h4>Some suggestions that may help:</h4><ul><li>Listen to other group members</li><li>Compromise</li><li>Do your part as planned</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "I don't want to make a big deal, but the person who sent you this thinks you are not doing as much as you should for their group"
             },
             "blunt": {
-              "html": "<h1>The person who sent you this says 'You need to get your head in the game and do your part'</h1>",
+              "html": "<h3>The person who sent you this says 'You need to get your head in the game and do your part'</h3><h4>Some suggestions that may help:</h4><ul><li>Don't be lazy</li><li>Stick to the original plan</li><li>Don't screw up the project</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "The person who sent you this says 'You need to get your head in the game and do your part'"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         },
         {
           "text": "Doing too much/Controlling",
           "description": "The person you are sending this to refuses to let you work or controls the project too much",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>Someone doesn't want to seem rude, but you are not letting them work on their part of yall's project. Please let them do what needs to be done.</h1>",
+              "html": "<h3>Someone doesn't want to seem rude, but you are not letting them work on their part of yall's project. Please let them do what needs to be done.</h3><h4>Some suggestions that may help:</h4><ul><li>Know that other people want to do their part</li><li>Compromise</li><li>Make a plan and stick to it</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "Someone doesn't want to seem rude, but you are not letting them work on their part of yall's project. Please let them do what needs to be done."
             },
             "blunt": {
-              "html": "<h1>Someone can't do their part of yall's project because you won't let them. You focus on your part, they'll focus on theirs.</h1>",
+              "html": "<h3>Someone can't do their part of yall's project because you won't let them. You focus on your part, they'll focus on theirs.</h3><h4>Some suggestions that may help:</h4><ul><li>Don't be a jerk</li><li>Communicate</li><li>Just make a plan and stick to it</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "Someone can't do their part of yall's project because you won't let them. You focus on your part, they'll focus on theirs."
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         },
         {
           "text": "Opinionated",
           "description": "The person you are sending this to blurts out their opinons with no filter",
           "subject": "So...this is awkward, but someone wanted to tell you something...",
-          "firstThing": "Somebody has taken issue with something having to do with you.",
           "messageTone": {
             "apologetic": {
-              "html": "<h1>A concerned third party would greatly appreciate it if you would think before you speak</h1>",
+              "html": "<h3>A concerned third party would greatly appreciate it if you would think before you speak</h3><h4>Some suggestions that may help:</h4><ul><li>Please be a little more sensitive</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "A concerned third party would greatly appreciate it if you would think before you speak"
             },
             "blunt": {
-              "html": "<h1>Someone thinks you speak out of turn and it upsets them</h1>",
+              "html": "<h3>Someone thinks you speak out of turn and it upsets them</h3><h4>Some suggestions that may help:</h4><ul><li>Bro just stop</li><li>Be more sensitive</li></ul><h4>They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it.</h4><h2>So go ahead and fix this before you get another email.</h2><p>This message is meant to be helpful, not mean. Of course a person could abuse this and try and be hurtful. Please take this information with a grain of salt, but you may want to consider if this issue is a real problem. If you don't want to receive any more messages from <a href='#'>sothisisawkward.com </a>please <a href='#'>opt out</a></p>",
               "text": "Someone thinks you speak out of turn and it upsets them"
             }
-          },
-          "attention": "They noticed that this issue is occurring pretty much all the time, and were uncomfortable telling you about it."
+          }
         }
       ]
     }
