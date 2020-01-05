@@ -3,10 +3,10 @@ module.exports = function() {
     var mysql = require("mysql");
 
     var con = mysql.createConnection({
-      host: "localhost",
-      user: "root",
+      host: "db.sothisisawkward.com",
+      user: "stiadbuser",
       password: "s00thinG",
-      database: "stia"
+      database: "sothisisawkward"
     });
 
     return con;
